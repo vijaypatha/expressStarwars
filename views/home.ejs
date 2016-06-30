@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <% include partials/head.ejs %>
+
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+<% for(var i = 0; i < movies.length; i++){%>
+<img src="/images/<%= movies[i].poster %>" class="img-reponsive"/>
+
+  <%}%>
+
+
+
+
+    <% include partials/scripts.ejs%>
+
+  </body>
+</html>
